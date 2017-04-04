@@ -2235,7 +2235,7 @@ ul.staggered-list li {
     display: none !important; } }
 
 @media only screen and (max-width: 992px) {
-  .hide-on-med-and-down, .my-navbar .desktop-links {
+  .hide-on-med-and-down, .my-navbar .title, .my-navbar .desktop-links {
     display: none !important; } }
 
 @media only screen and (min-width: 601px) {
@@ -6903,11 +6903,11 @@ html {
 ::-webkit-scrollbar-thumb {
   -webkit-border-radius: 10px;
   border-radius: 10px;
-  background: #1de9b6;
+  background: #1E88E5;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5); }
 
 ::-webkit-scrollbar-thumb:window-inactive {
-  background: #1de9b6; }
+  background: #42A5F5; }
 
 .my-hoverable, .gallery-card {
   transition: box-shadow .25s;
@@ -6935,6 +6935,12 @@ html {
 
 .contact-img {
   padding: 30px; }
+
+.my-navbar .title {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  padding-left: 50px; }
 
 .my-navbar .desktop-links a {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
