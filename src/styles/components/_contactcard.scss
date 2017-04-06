@@ -32,11 +32,29 @@ $social-buttons-hover-color: color("teal", "lighten-2");
 
 
   .img-section{
+    min-height: 30px;
       border-radius: $card-border-radius $card-border-radius 0 0;
       background-color: color("blue", "lighten-2");
+
+
   }
 
+  .topbar{
+    min-height: 10px;
+    border-radius: $card-border-radius $card-border-radius 0 0;
+    background-color: inherit;
+  }
+
+
+  .bottombar{
+    min-height:10px;
+    border-radius:0 0 $card-border-radius $card-border-radius;
+    background-color: inherit;
+  }
   .card-title {
+    padding-top: 15px;
+    min-height: 10px;
+    border-radius: $card-border-radius $card-border-radius 0 0;
     font-size: 24px;
     font-weight: 300;
     &.activator {
@@ -53,6 +71,7 @@ $social-buttons-hover-color: color("teal", "lighten-2");
       overflow: hidden;
     }
     .card-content {
+
       max-height: 40%;
       overflow: hidden;
     }
@@ -184,7 +203,7 @@ $social-buttons-hover-color: color("teal", "lighten-2");
   .card-bottom {
 
     position: relative;
-    background-color: color("blue", "lighten-2");
+    background-color: inherit;
     border-top: 1px solid rgba(160,160,160,.2);
     padding-bottom: 1px;
     z-index: 2;
@@ -207,14 +226,24 @@ $social-buttons-hover-color: color("teal", "lighten-2");
 
 .card-section {
   position: relative;
-  background-color: color("blue", "lighten-5");
+  background-color: inherit;
   border-top: 1px solid rgba(160,160,160,.2);
   padding: $card-padding;
   z-index: 2;
-  color: color("blue-grey", "darken-2");
+  color: inherit;
+
+  .section-title{
+    text-decoration: underline;
+
+  }
+
+  ul li{
+    margin-left: 10px;
+    list-style-type: circle;
+}
 
   a:not(.btn):not(.btn-large):not(.btn-floating) {
-    color: color("light-blue", "darken-4");
+    color: inherit;
     margin-right: $card-padding;
     transition: color .3s ease;
     font-weight: bold;

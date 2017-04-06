@@ -6410,9 +6410,21 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   transition: box-shadow .25s;
   border-radius: 15px; }
   .card .img-section, .rescard .img-section {
+    min-height: 30px;
     border-radius: 15px 15px 0 0;
     background-color: #64B5F6; }
+  .card .topbar, .rescard .topbar {
+    min-height: 10px;
+    border-radius: 15px 15px 0 0;
+    background-color: inherit; }
+  .card .bottombar, .rescard .bottombar {
+    min-height: 10px;
+    border-radius: 0 0 15px 15px;
+    background-color: inherit; }
   .card .card-title, .rescard .card-title {
+    padding-top: 15px;
+    min-height: 10px;
+    border-radius: 15px 15px 0 0;
     font-size: 24px;
     font-weight: 300; }
     .card .card-title.activator, .rescard .card-title.activator {
@@ -6509,7 +6521,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
       line-height: 48px; }
   .card .card-bottom, .rescard .card-bottom {
     position: relative;
-    background-color: #64B5F6;
+    background-color: inherit;
     border-top: 1px solid rgba(160, 160, 160, 0.2);
     padding-bottom: 1px;
     z-index: 2;
@@ -6526,13 +6538,18 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
       padding-bottom: 64px; }
   .card .card-section, .rescard .card-section {
     position: relative;
-    background-color: #E3F2FD;
+    background-color: inherit;
     border-top: 1px solid rgba(160, 160, 160, 0.2);
     padding: 15px;
     z-index: 2;
-    color: #455a64; }
+    color: inherit; }
+    .card .card-section .section-title, .rescard .card-section .section-title {
+      text-decoration: underline; }
+    .card .card-section ul li, .rescard .card-section ul li {
+      margin-left: 10px;
+      list-style-type: circle; }
     .card .card-section a:not(.btn):not(.btn-large):not(.make-appointment-button):not(.btn-large):not(.make-appointment-button):not(.btn-floating), .rescard .card-section a:not(.btn):not(.btn-large):not(.make-appointment-button):not(.btn-large):not(.make-appointment-button):not(.btn-floating) {
-      color: #01579b;
+      color: inherit;
       margin-right: 15px;
       transition: color .3s ease;
       font-weight: bold; }
@@ -6926,7 +6943,7 @@ html {
 .list-inline {
   padding-left: 0;
   margin-left: 0px;
-  list-style: none; }
+  list-style: circle; }
 
 .list-inline > li {
   display: inline-block;
