@@ -6951,7 +6951,8 @@ html {
   padding-left: 5px; }
 
 .contact-img {
-  padding: 30px; }
+  padding: 30px;
+  max-height: 250px; }
 
 .my-navbar .title {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
