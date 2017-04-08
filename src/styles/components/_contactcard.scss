@@ -257,6 +257,21 @@ $social-buttons-hover-color: color("teal", "lighten-2");
   }
 }
 
+contact-section {
+  position: relative;
+  background-color: inherit;
+  border-top: 1px solid rgba(160,160,160,.2);
+  padding: $card-padding;
+  z-index: 2;
+  color: inherit;
+
+  ul li{
+    padding-left: 10px;
+    margin-left: 10px;
+    list-style-type: circle;
+}
+}
+
 
 .card-action {
   position: relative;

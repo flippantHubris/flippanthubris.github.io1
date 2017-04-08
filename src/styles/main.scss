@@ -8,7 +8,9 @@
 
 @import 'materialize_sass/components/collapsible';
 
-
+a{
+  text:color("blue", "darken-3");
+}
 
 .rescard{
   @extend .card;

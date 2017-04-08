@@ -6558,6 +6558,17 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
     .card .card-section + .card-reveal, .rescard .card-section + .card-reveal {
       z-index: 1;
       padding-bottom: 64px; }
+  .card contact-section, .rescard contact-section {
+    position: relative;
+    background-color: inherit;
+    border-top: 1px solid rgba(160, 160, 160, 0.2);
+    padding: 15px;
+    z-index: 2;
+    color: inherit; }
+    .card contact-section ul li, .rescard contact-section ul li {
+      padding-left: 10px;
+      margin-left: 10px;
+      list-style-type: circle; }
   .card .card-action, .rescard .card-action {
     position: relative;
     background-color: inherit;
@@ -6882,6 +6893,9 @@ nav {
   .popout.collapsible > li.active {
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     margin: 16px 0; }
+
+a {
+  text: #1565C0; }
 
 .rescard h6 {
   text-decoration: underline; }
