@@ -2235,7 +2235,7 @@ ul.staggered-list li {
     display: none !important; } }
 
 @media only screen and (max-width: 992px) {
-  .hide-on-med-and-down, .my-navbar .desktop-links {
+  .hide-on-med-and-down, .my-navbar .title, .my-navbar .desktop-links {
     display: none !important; } }
 
 @media only screen and (min-width: 601px) {
@@ -6410,9 +6410,21 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   transition: box-shadow .25s;
   border-radius: 15px; }
   .card .img-section, .rescard .img-section {
+    min-height: 30px;
     border-radius: 15px 15px 0 0;
     background-color: #64B5F6; }
+  .card .topbar, .rescard .topbar {
+    min-height: 10px;
+    border-radius: 15px 15px 0 0;
+    background-color: inherit; }
+  .card .bottombar, .rescard .bottombar {
+    min-height: 10px;
+    border-radius: 0 0 15px 15px;
+    background-color: inherit; }
   .card .card-title, .rescard .card-title {
+    padding-top: 15px;
+    min-height: 10px;
+    border-radius: 15px 15px 0 0;
     font-size: 24px;
     font-weight: 300; }
     .card .card-title.activator, .rescard .card-title.activator {
@@ -6509,7 +6521,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
       line-height: 48px; }
   .card .card-bottom, .rescard .card-bottom {
     position: relative;
-    background-color: #64B5F6;
+    background-color: inherit;
     border-top: 1px solid rgba(160, 160, 160, 0.2);
     padding-bottom: 1px;
     z-index: 2;
@@ -6526,13 +6538,18 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
       padding-bottom: 64px; }
   .card .card-section, .rescard .card-section {
     position: relative;
-    background-color: #E3F2FD;
+    background-color: inherit;
     border-top: 1px solid rgba(160, 160, 160, 0.2);
     padding: 15px;
     z-index: 2;
-    color: #455a64; }
+    color: inherit; }
+    .card .card-section .section-title, .rescard .card-section .section-title {
+      text-decoration: underline; }
+    .card .card-section ul li, .rescard .card-section ul li {
+      margin-left: 10px;
+      list-style-type: circle; }
     .card .card-section a:not(.btn):not(.btn-large):not(.make-appointment-button):not(.btn-large):not(.make-appointment-button):not(.btn-floating), .rescard .card-section a:not(.btn):not(.btn-large):not(.make-appointment-button):not(.btn-large):not(.make-appointment-button):not(.btn-floating) {
-      color: #01579b;
+      color: inherit;
       margin-right: 15px;
       transition: color .3s ease;
       font-weight: bold; }
@@ -6541,6 +6558,17 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
     .card .card-section + .card-reveal, .rescard .card-section + .card-reveal {
       z-index: 1;
       padding-bottom: 64px; }
+  .card contact-section, .rescard contact-section {
+    position: relative;
+    background-color: inherit;
+    border-top: 1px solid rgba(160, 160, 160, 0.2);
+    padding: 15px;
+    z-index: 2;
+    color: inherit; }
+    .card contact-section ul li, .rescard contact-section ul li {
+      padding-left: 10px;
+      margin-left: 10px;
+      list-style-type: circle; }
   .card .card-action, .rescard .card-action {
     position: relative;
     background-color: inherit;
@@ -6866,6 +6894,9 @@ nav {
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     margin: 16px 0; }
 
+a {
+  text: #1565C0; }
+
 .rescard h6 {
   text-decoration: underline; }
 
@@ -6903,11 +6934,11 @@ html {
 ::-webkit-scrollbar-thumb {
   -webkit-border-radius: 10px;
   border-radius: 10px;
-  background: #1de9b6;
+  background: #1E88E5;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5); }
 
 ::-webkit-scrollbar-thumb:window-inactive {
-  background: #1de9b6; }
+  background: #42A5F5; }
 
 .my-hoverable, .gallery-card {
   transition: box-shadow .25s;
@@ -6926,7 +6957,7 @@ html {
 .list-inline {
   padding-left: 0;
   margin-left: 0px;
-  list-style: none; }
+  list-style: circle; }
 
 .list-inline > li {
   display: inline-block;
@@ -6934,7 +6965,14 @@ html {
   padding-left: 5px; }
 
 .contact-img {
-  padding: 30px; }
+  padding: 30px;
+  max-height: 250px; }
+
+.my-navbar .title {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  padding-left: 50px; }
 
 .my-navbar .desktop-links a {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
